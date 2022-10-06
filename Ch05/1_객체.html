@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1_객체</title>
+    <script src="./lib/Account.js"></script>
+    <!--
+        날짜 : 2022 10 06
+        이름 : 박진휘
+        내용 : JavaScript 객체 실습
+    -->
+</head>
+<body>
+    <h3>객체</h3>
+    <script>
+        //사용자 정의 객체
+        let car = {
+            name: "소나타",
+            color: "파란색",
+            speed: 0,
+            speedUp: function(speed){
+                this.speed += speed;
+            },
+            speedDown: function(speed){
+                this.speed -= speed;
+            },
+            show: function(){
+                document.write("차량명 : " +this.name +"<br>");
+                document.write("차량색 : " +this.color +"<br>");
+                document.write("속도 : " +this.speed +"<br>");
+            }
+        };
+
+        car.speedUp(100);
+        car.speedDown(40);
+        car.show();
+
+        //kb, 10000 입금, 2000출금
+        let kb = new Account("kb","101","박",5000);
+        kb.deposit(10000);
+        kb.withdraw(2000);
+        kb.show();
+
+        //wr. 30000 입금, 7000출금
+        let wr = new Account("wr","102","김",1000);
+        wr.deposit(30000);
+        wr.withdraw(7000);
+        wr.show();
+    </script>
+</body>
+</html>
