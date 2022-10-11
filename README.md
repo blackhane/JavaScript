@@ -14,4 +14,10 @@
 - sub3.내장함수
 ## Ch05. 객체
 - sub1.객체
-- sub2.JSON 객체
+- sub2.JSON객체
+- sub3.내장객체
+- sub4.문서객체
+- sub5.브라우저객체
+## Ch06. jQuery
+- sub1.jQuery 기초
+- sub2.jQuery 선택자
