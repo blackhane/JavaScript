@@ -21,3 +21,10 @@
 ## Ch06. jQuery
 - sub1.jQuery 기초
 - sub2.jQuery 선택자
+## Ch06. jQuery 함수
+- sub1.jQuery 탐색함수
+- sub2.jQuery 조작함수
+## Ch06. jQuery 이벤트
+- sub1.jQuery 이벤트
+- sub2.jQuery 이벤트함수
+- sub3.jQuery 이벤트객체
