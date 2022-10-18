@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/Book/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            let r1 = $('#chk1').prop('checked');
+            console.log(r1);
+            let r2 = $('#chk2').prop('checked');
+            console.log(r2);
+            $('#chk3').prop('checked',true);
+            let r3 = $('#se1').prop('selectedIndex');
+            console.log(r3);
+        });
+    </script>
+</head>
+<body>
+    <form action="#" id="form_1">
+        <input type="checkbox" id="chk1"><label for="chk1">chk1</label>
+        <input type="checkbox" id="chk2" checked><label for="chk1">chk2</label>
+        <input type="checkbox" id="chk3"><label for="chk1">chk3</label>
+        <select name="" id="se1">
+            <option value="op1">option1</option>
+            <option value="op2">option2</option>
+            <option value="op3" selected>option3</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/Book/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            let r1 = $('#user_name').val();
+            console.log(r1);
+
+            $('#user_id').val('javascript');
+
+            let r2 = $('#user_id').prop('defaultValue');
+            console.log(r2);
+        });
+    </script>
+</head>
+<body>
+    <form action="#">
+        <p>
+            <input type="text" name="" id="user_name" value="용대리">
+        </p>
+        <p>
+            <input type="text" name="" id="user_id" value="hello">
+        </p>
+    </form>
+</body>
+</html>
