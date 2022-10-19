@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/Book/jquery-3.6.1.min.js"></script>
+    <script>
+       $(function(){
+            $('.btn_1').on('mouseover',function(){
+                alert('Hello');
+            });
+            $(document).on('mouseover','.btn_2',function(){
+                alert('Welcome');
+            });
+
+            let btn_2 = $('<p><button class=\'btn_2\'>버튼2</button></p>');
+            $('#wrap').append(btn_2);
+
+            $('.del_1').on('click',function(){
+                $('.btn_1').off('mouserover');
+            });
+            $('.del_2').on('click',function(){
+                $(document).off('mouseover','btn_2');
+            });
+
+       });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p>
+            <button class="btn_!">버튼1</button>
+        </p>
+        <p>
+            <button class="del_1">버튼1 이벤트 해제</button>
+            <button class="del_2">버튼2 이벤트 해제</button>
+        </p>
+    </div>
+</body>
+</html>
