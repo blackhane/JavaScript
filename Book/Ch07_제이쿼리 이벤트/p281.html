@@ -6,22 +6,22 @@
     <script src="/Book/jquery-3.6.1.min.js"></script>
     <script>
        $(function(){
-            $('.btn_wrap').delegate('.btn_1.on','mouseover focus',function(){
+            $('.wrap').delegate('.btn1','mouseover',function(){
                 alert('Hello');
             });
-            $('.btn_1').addClass('n');
-
-            $(document).one('mouseover focus','.btn_2.on',function(){
+            $('.btn1').addClass('n');
+            
+            $(document).one('mouseover','.btn_2',function(){
                 alert('Welcome');
             });
-            $('btn_2').addClass('on');
+            $('.btn_2').addClass('on');
        });
     </script>
 </head>
 <body>
-    <div id="wrap">
-        <p class="btn_wrap">
-            <button class="btn_1">버튼1</button>
+    <div>
+        <p class="wrap">
+            <button class="btn1">버튼1</button>
         </p>
         <p>
             <button class="btn_2">버튼2</button>

@@ -17,10 +17,10 @@
             $('#wrap').append(btn_2);
 
             $('.del_1').on('click',function(){
-                $('.btn_1').off('mouserover');
+                $('.btn_1').off('mouseover');
             });
             $('.del_2').on('click',function(){
-                $(document).off('mouseover','btn_2');
+                $(document).off('mouseover','.btn_2');
             });
 
        });
@@ -29,12 +29,12 @@
 <body>
     <div id="wrap">
         <p>
-            <button class="btn_!">버튼1</button>
+            <button class="btn_1">버튼1</button>
         </p>
+    </div>
         <p>
             <button class="del_1">버튼1 이벤트 해제</button>
             <button class="del_2">버튼2 이벤트 해제</button>
         </p>
-    </div>
 </body>
 </html>
