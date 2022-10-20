@@ -5,10 +5,36 @@
     <title>Document</title>
     <script src="/Book/jquery-3.6.1.min.js"></script>
     <script>
-       
+       $(function(){
+            let baseFontSize = 14;
+            $('.zoomBtnZone button').on('click',zoomInOut);
+            function zoomInOut(){
+                if($(this).hasClass('zoomOutBtn')){
+                    if(baseFontSize <= 8){
+                        return false;
+                    }
+                    baseFontSize--;
+                }else if($(this).hasClass('zoomInBtn')){
+                    if(baseFontSize >= 20){
+                        return false;
+                    }
+                    baseFontSize++;
+                }else{
+                    baseFontSize = 14;
+                }
+                $('.fontSize').text(baseFontSize + 'px');
+                $('body').css({fontSize:baseFontSize + 'px'});
+            }
+       });
     </script>
 </head>
 <body>
-    
+    <p class="zoomBtnZone">
+        <button class="zoomOutBtn">-</button>
+        <button class="originBtn">100%</button>
+        <button class="zoomInBtn">+</button>
+    </p>
+    <p class="fontSize">14px</p>
+    <div id="wrap">내용1</div>
 </body>
 </html>
